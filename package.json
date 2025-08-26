@@ -4,11 +4,11 @@
   "description": "Tool to Automatically Collect Details of the Adverse Societal Impact of Social Media",
   "main": "server/index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "cd server && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "build": "cd client && npm run build",
+    "build": "cd server && npm install",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install",
     "seed": "cd server && npm run seed"
   },
