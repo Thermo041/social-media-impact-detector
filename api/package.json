@@ -1,0 +1,15 @@
+{
+  "name": "social-media-impact-api",
+  "version": "1.0.0",
+  "description": "Serverless API for Social Media Impact Detector",
+  "main": "index.js",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "natural": "^6.5.0",
+    "sentiment": "^5.0.2"
+  }
+}
