@@ -1,0 +1,31 @@
+{
+  "name": "social-media-impact-detector",
+  "version": "1.0.0",
+  "description": "Tool to Automatically Collect Details of the Adverse Societal Impact of Social Media",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": [
+    "social-media",
+    "nlp",
+    "sentiment-analysis",
+    "react",
+    "node.js",
+    "mongodb"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "mongoose": "^8.18.0"
+  }
+}
